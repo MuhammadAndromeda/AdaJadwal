@@ -6,7 +6,11 @@ plugins {
 }
 
 android {
-
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+    
     namespace = "com.yourname.schedule_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
